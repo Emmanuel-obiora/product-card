@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --Dark-cyan: hsl(158, 36%, 37%);
+    --Cream: hsl(30, 38%, 92%);
+    --Very-dark-blue: hsl(212, 21%, 14%);
+    --Dark-grayish-blue: hsl(228, 12%, 48%);
+    --White: hsl(0, 0%, 100%);
+}
+
+body{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: var(--Cream);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+}
+
+.product{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 400px;
+    margin-top: 3rem;
+}
+
+.product > span{
+    height: 100%;
+    width: 280px;
+    background-image: url(images/image-product-desktop.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 8px 0 0 8px;
+}
+
+.product-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: var(--White);
+    gap: .6rem;
+    padding: 2rem;
+    height: 100%;
+    width: 280px;
+    border-radius: 0 8px 8px 0;
+}
+
+.top{
+    letter-spacing: 3px;
+    color: var(--Dark-grayish-blue);
+}
+
+.product-info > h1{
+    line-height: 32px;
+    font-family: 'Fraunces', serif;
+    font-size: 30px;
+    font-weight: 700;
+    color: var(--Very-dark-blue);
+}
+
+.product-info > p{
+    font-size: 13px;
+    color: var(--Dark-grayish-blue);
+    line-height: 20px;
+}
+
+.cost{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    font-family: 'Fraunces', serif;
+}
+
+.cost > strong{
+    font-weight: 700;
+    color: var(--Dark-cyan);
+    font-size: 28px;
+}
+
+.cost > strike{
+    color: var(--Dark-grayish-blue);
+    font-size: 12px;
+}
+
+.add-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--White);
+    width: 100%;
+    background: var(--Dark-cyan);
+    border-radius: 8px;
+    padding: .8rem;
+    gap: .6rem;
+    cursor: pointer;
+}
+
+footer{
+    margin-top: auto;
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+@media screen and (max-width: 600px){
+    .product{
+        flex-direction: column;
+        height: 600px;
+        width: 350px;
+        margin: 0 auto;
+    }
+
+    .product > span{
+        background-image: url(./images/image-product-mobile.jpg);
+        width: 100%;
+        border-radius: 8px 8px 0 0;
+    }
+
+    .product-info{
+        height: auto;
+        gap: .8rem;
+        width: 100%;
+        border-radius: 0 0 8px 8px;
+    }
+
+    .product-info > h1{
+        font-size: 39px;
+        line-height: 38px;
+    }
+
+    .product-info > p{
+        font-size: 15px;
+        line-height: 23px;
+    }
+}
