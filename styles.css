@@ -85,9 +85,9 @@ body{
     font-size: 28px;
 }
 
-.cost > strike{
+.cost > small{
     color: var(--Dark-grayish-blue);
-    font-size: 12px;
+    text-decoration: line-through;
 }
 
 .add-btn{
