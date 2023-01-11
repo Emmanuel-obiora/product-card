@@ -28,7 +28,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [GitHub](https://github.com/Emmanuel-obiora/product-card)
-- Live Site URL: [live site](https://your-live-site-url.com)
+- Live Site URL: [live site](https://emmanuel-obiora.github.io/product-card/)
 
 ## My process
 
